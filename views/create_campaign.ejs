@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Charity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AFE1AF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #343a40;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        .my-charity-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .campaign {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .campaign h2 {
+            margin-bottom: 10px;
+        }
+
+        .deposit-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .deposit-form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: #fff;
+            color: #343a40;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-menu">
+            <img class="header-img" src="https://pub-07d7c954bafb4365bda31d35522e8898.r2.dev/chaporm.png"
+                alt="Charity Platform Duo Mawud">
+            <div class="navbar-links">
+                <a href="/home">Home</a>
+                <a href="/create_campaign"><strong style="color: green;">Create Campaign</strong></a>
+                <a href="/my_campaign">My Campaign</a>
+                <a href="/profile">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="my-charity-container">
+        <div class="container">
+            <form action="/create_campaign" method="POST">
+                <div class="campaign">
+                    <h2>Create a new Campaign</h2>
+                    <div class="deposit-form">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" required>
+                    </div>
+                    <div class="deposit-form">
+                        <label for="description">Description:</label>
+                        <input type="text" name="description" required>
+                    </div>
+                    <div class="deposit-form">
+                        <label for="goal">Goal in Credits:</label>
+                        <input type="number" name="goal" min="1" required>
+                        <br><br>
+                        <button type="submit">Create Campaign</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer" style="color: green;">
+        © Duo Mawud
+    </div>
+</body>
+
+</html>

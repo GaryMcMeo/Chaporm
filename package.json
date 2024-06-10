@@ -1,0 +1,37 @@
+{
+  "name": "charity_platform",
+  "version": "1.0.0",
+  "description": "charity platform blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "charity"
+  ],
+  "author": "darell and edward",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "ethers": "^6.13.0",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.10.0",
+    "node": "^20.14.0",
+    "web3": "^4.9.0"
+  }
+}
